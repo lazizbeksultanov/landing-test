@@ -1,9 +1,19 @@
-import Image from 'next/image'
+import { Main } from '@/sections/main'
+import { TrustUs } from '@/sections/trust-us'
+import { Features } from '@/sections/features'
+import { Integrations } from '@/sections/integrations'
+import { Statistics } from '@/sections/statistics'
+import { Pricing } from '@/sections/pricing'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className={'ml-24 flex bg-gradient-conic text-white'}></div>
+    <main>
+      <Main />
+      <TrustUs />
+      <Features />
+      <Integrations />
+      <Statistics />
+      <Pricing />
     </main>
   )
 }
