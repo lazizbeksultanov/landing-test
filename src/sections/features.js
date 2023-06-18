@@ -7,11 +7,11 @@ export const Features = () => {
     <div className="w-full bg-white py-24">
       <div className="container">
         <div className="mx-auto w-7/12">
-          <p className="text-center text-base font-semibold text-primary-700">Imkoniyatlarimiz</p>
-          <p className="mt-3 text-center text-4xl font-medium text-gray-900">
+          <p className="text-center text-base font-semibold leading-6 text-primary-700">Imkoniyatlarimiz</p>
+          <p className="mt-3 text-center text-4xl font-semibold leading-[2.75rem] tracking-tight text-gray-900">
             Analytics that feels like it’s from the future
           </p>
-          <p className="mt-5 text-center text-xl font-light text-gray-500">
+          <p className="mt-5 text-center text-xl font-normal leading-[1.875rem] text-gray-500">
             Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users.
             Trusted by over 4,000 startups.
           </p>
@@ -25,13 +25,13 @@ export const Features = () => {
                 </div>
               </div>
               <div className="mb-8">
-                <p className="mb-4 text-3xl font-medium leading-none text-gray-900">Share team inboxes</p>
-                <p className="text-lg font-light text-gray-500">
+                <p className="mb-4 text-3xl font-semibold leading-[2.375rem] text-gray-900">Share team inboxes</p>
+                <p className="text-lg font-normal leading-7 text-gray-500">
                   Whether you have a team of 2 or 200, our shared team inboxes <br /> keep everyone on the same page and
                   in the loop.
                 </p>
               </div>
-              <div className="flex flex-col gap-y-5 pl-4">
+              <div className="flex flex-col gap-y-5 pl-4 text-lg font-normal leading-7 text-gray-500">
                 <div className="flex items-center gap-x-3">
                   <div className="max-w-max rounded-full bg-primary-100 p-2">
                     <svg width="14" height="14" viewBox="0 0 15 13" fill="none">
@@ -43,7 +43,7 @@ export const Features = () => {
                       />
                     </svg>
                   </div>
-                  <p className="text-lg font-light text-gray-500">Leverage automation to move fast</p>
+                  <p>Leverage automation to move fast</p>
                 </div>
                 <div className="flex items-center gap-x-3">
                   <div className="max-w-max rounded-full bg-primary-100 p-2">
@@ -56,7 +56,7 @@ export const Features = () => {
                       />
                     </svg>
                   </div>
-                  <p className="text-lg font-light text-gray-500">Leverage automation to move fast</p>
+                  <p>Leverage automation to move fast</p>
                 </div>
                 <div className="flex items-center gap-x-3">
                   <div className="max-w-max rounded-full bg-primary-100 p-2">
@@ -69,12 +69,12 @@ export const Features = () => {
                       />
                     </svg>
                   </div>
-                  <p className="text-lg font-light text-gray-500">Leverage automation to move fast</p>
+                  <p>Leverage automation to move fast</p>
                 </div>
               </div>
             </div>
             <div className="basis-1/2">
-              <Image src={FeaturesOne} alt="" className="h-full" />
+              <Image src={FeaturesOne} alt="" className="h-full w-full" />
             </div>
           </div>
           <div className="flex flex-row-reverse items-center justify-between gap-x-24">
@@ -85,13 +85,13 @@ export const Features = () => {
                 </div>
               </div>
               <div className="mb-8">
-                <p className="mb-4 text-3xl font-medium leading-none text-gray-900">Share team inboxes</p>
-                <p className="text-lg font-light text-gray-500">
-                  Whether you have a team of 2 or 200, our shared team inboxes <br /> keep everyone on the same page and
-                  in the loop.
+                <p className="mb-4 text-3xl font-semibold leading-[2.375rem] text-gray-900">Deliver instant answers</p>
+                <p className="text-lg font-normal leading-7 text-gray-500">
+                  An all-in-one customer service platform that helps you balance <br /> everything your customers need
+                  to be happy.
                 </p>
               </div>
-              <div className="flex flex-col gap-y-5 pl-4">
+              <div className="flex flex-col gap-y-5 pl-4 text-lg font-normal leading-7 text-gray-500">
                 <div className="flex items-center gap-x-3">
                   <div className="max-w-max rounded-full bg-primary-100 p-2">
                     <svg width="14" height="14" viewBox="0 0 15 13" fill="none">
@@ -103,7 +103,7 @@ export const Features = () => {
                       />
                     </svg>
                   </div>
-                  <p className="text-lg font-light text-gray-500">Leverage automation to move fast</p>
+                  <p>Keep your customers in the loop with live chat</p>
                 </div>
                 <div className="flex items-center gap-x-3">
                   <div className="max-w-max rounded-full bg-primary-100 p-2">
@@ -116,7 +116,7 @@ export const Features = () => {
                       />
                     </svg>
                   </div>
-                  <p className="text-lg font-light text-gray-500">Leverage automation to move fast</p>
+                  <p>Embed help articles right on your website</p>
                 </div>
                 <div className="flex items-center gap-x-3">
                   <div className="max-w-max rounded-full bg-primary-100 p-2">
@@ -129,12 +129,12 @@ export const Features = () => {
                       />
                     </svg>
                   </div>
-                  <p className="text-lg font-light text-gray-500">Leverage automation to move fast</p>
+                  <p>Customers never have to leave the page to find an answer</p>
                 </div>
               </div>
             </div>
             <div className="basis-1/2">
-              <Image src={FeaturesOne} alt="" className="h-full" />
+              <Image src={FeaturesOne} alt="" className="h-full w-full" />
             </div>
           </div>
           <div className="flex items-center justify-between gap-x-24">
@@ -153,13 +153,15 @@ export const Features = () => {
                 </div>
               </div>
               <div className="mb-8">
-                <p className="mb-4 text-3xl font-medium leading-none text-gray-900">Share team inboxes</p>
-                <p className="text-lg font-light text-gray-500">
-                  Whether you have a team of 2 or 200, our shared team inboxes <br /> keep everyone on the same page and
-                  in the loop.
+                <p className="mb-4 text-3xl font-semibold leading-[2.375rem] text-gray-900">
+                  Manage your team with reports
+                </p>
+                <p className="text-lg font-normal leading-7 text-gray-500">
+                  Measure what matters with Untitled’s easy-to-use reports. You <br /> can filter, export, and drilldown
+                  on the data in a couple clicks.
                 </p>
               </div>
-              <div className="flex flex-col gap-y-5 pl-4">
+              <div className="flex flex-col gap-y-5 pl-4 text-lg font-normal leading-7 text-gray-500">
                 <div className="flex items-center gap-x-3">
                   <div className="max-w-max rounded-full bg-primary-100 p-2">
                     <svg width="14" height="14" viewBox="0 0 15 13" fill="none">
@@ -171,7 +173,7 @@ export const Features = () => {
                       />
                     </svg>
                   </div>
-                  <p className="text-lg font-light text-gray-500">Leverage automation to move fast</p>
+                  <p>Filter, export, and drilldown on the data quickly</p>
                 </div>
                 <div className="flex items-center gap-x-3">
                   <div className="max-w-max rounded-full bg-primary-100 p-2">
@@ -184,7 +186,7 @@ export const Features = () => {
                       />
                     </svg>
                   </div>
-                  <p className="text-lg font-light text-gray-500">Leverage automation to move fast</p>
+                  <p>Save, schedule, and automate reports to your inbox</p>
                 </div>
                 <div className="flex items-center gap-x-3">
                   <div className="max-w-max rounded-full bg-primary-100 p-2">
@@ -197,12 +199,12 @@ export const Features = () => {
                       />
                     </svg>
                   </div>
-                  <p className="text-lg font-light text-gray-500">Leverage automation to move fast</p>
+                  <p>Connect the tools you already use with 100+ integrations</p>
                 </div>
               </div>
             </div>
             <div className="basis-1/2">
-              <Image src={FeaturesOne} alt="" className="h-full" />
+              <Image src={FeaturesOne} alt="" className="h-full w-full" />
             </div>
           </div>
         </div>

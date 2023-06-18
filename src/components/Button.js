@@ -9,9 +9,11 @@ export const Button = ({ children, variant, size }) => {
           : variant === 'empty'
           ? 'text-gray-500'
           : '',
-        'rounded-lg font-semibold',
+        'rounded-lg',
         size === 'sm'
           ? 'text-xs'
+          : size === 'md'
+          ? 'px-5 py-3 text-base'
           : size === 'lg'
           ? 'px-7 py-4 text-lg'
           : size === 'w-full'

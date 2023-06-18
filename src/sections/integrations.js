@@ -7,9 +7,11 @@ export const Integrations = () => {
     <div className="w-full bg-gray-50 py-24">
       <div className="container">
         <div className="mx-auto w-7/12">
-          <p className="text-center text-base font-semibold text-primary-700">Integrations</p>
-          <p className="mt-3 text-center text-4xl font-medium text-gray-900">Get more value from your tools</p>
-          <p className="mt-5 text-center text-xl font-light text-gray-500">
+          <p className="text-center text-base font-semibold leading-6 text-primary-700">Integrations</p>
+          <p className="mt-3 text-center text-4xl font-semibold leading-[2.75rem] text-gray-900">
+            Get more value from your tools
+          </p>
+          <p className="mt-5 text-center text-xl font-normal leading-[1.875rem] text-gray-500">
             Connect your tools, connect your teams. With over 200 apps already available in our directory, your team’s
             favourite tools are just a click away.
           </p>
@@ -66,7 +68,9 @@ export const Integrations = () => {
             </div>
           </div>
           <div className="mx-auto max-w-max">
-            <Button variant="solid">View all integrations</Button>
+            <Button variant="solid">
+              <p className="font-semibold leading-6">View all integrations</p>
+            </Button>
           </div>
         </div>
       </div>
