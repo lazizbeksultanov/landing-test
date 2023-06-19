@@ -38,7 +38,7 @@ export const Header = () => {
               </Button>
             </Link>
           </div>
-          <div className="">
+          <div className="inline-block lg:hidden">
             <button
               className="group flex h-12 w-12 flex-col items-center justify-center rounded"
               onClick={() => setIsOpen(!isOpen)}
@@ -52,7 +52,7 @@ export const Header = () => {
       </div>
       <div
         className={`absolute z-0 h-[calc(100vh-88px)] w-full bg-primary-400 transition-all duration-500 ${
-          isOpen ? 'translate-y-[88px]' : '-translate-y-[calc(100%-88px)]'
+          isOpen ? 'translate-y-[88px]' : '-translate-y-[calc(100%-84px)]'
         }`}
       >
         <p>Hello</p>
