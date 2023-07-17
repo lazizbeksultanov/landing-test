@@ -52,7 +52,7 @@ export const Header = () => {
         </div>
       </div>
       <div
-        className={`absolute z-0 h-[calc(100vh-80px)] w-full bg-white transition-all duration-500 md:h-[calc(100vh-88px)] ${
+        className={`absolute z-0 min-h-[calc(100vh-80px)] w-full bg-white transition-all duration-500 md:h-[calc(100vh-88px)] ${
           isOpen ? 'translate-y-[80px] md:translate-y-[88px]' : '-translate-y-full md:-translate-y-full'
         }`}
       >
