@@ -1,4 +1,4 @@
-export const Button = ({ children, variant, size }) => {
+export const Button = ({ children, variant, size, responsivewfull }) => {
   return (
     <button
       className={[
@@ -8,8 +8,12 @@ export const Button = ({ children, variant, size }) => {
           ? 'border border-gray-300 bg-white text-gray-700'
           : variant === 'empty'
           ? 'text-gray-500'
+          : variant === 'primary'
+          ? 'bg-primary-50'
           : '',
         'rounded-lg',
+        responsivewfull === true && 'w-full md:w-auto',
+        '',
         size === 'sm'
           ? 'text-xs'
           : size === 'md'

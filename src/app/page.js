@@ -6,7 +6,6 @@ import { Statistics } from '@/sections/statistics'
 import { Pricing } from '@/sections/pricing'
 import { Freetrial } from '@/sections/freetrial'
 import { Cta } from '@/sections/cta'
-import { Footer } from '@/sections/footer'
 
 export default function Home() {
   return (
@@ -19,7 +18,6 @@ export default function Home() {
       {/*<Pricing />*/}
       {/*<Freetrial />*/}
       {/*<Cta />*/}
-      {/*<Footer />*/}
     </main>
   )
 }
