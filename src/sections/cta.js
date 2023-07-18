@@ -7,14 +7,14 @@ export const Cta = () => {
   return (
     <div className="bg-white pb-24">
       <div className="container">
-        <div className="flex items-center justify-between gap-x-24">
-          <div className="basis-1/2">
+        <div className="flex flex-col items-center justify-between gap-x-24 md:flex-row">
+          <div className="w-full basis-1/2 md:w-auto">
             <div className="mb-8">
-              <p className="mb-4 text-5xl font-semibold leading-[3.75rem] text-gray-900">
+              <p className="mb-4 text-3xl font-semibold leading-[2.375rem] text-gray-900 md:text-5xl md:leading-[3.75rem]">
                 Join 4,000+ startups growing with Untitled
               </p>
             </div>
-            <div className="flex flex-col gap-y-5 pl-4 text-lg font-normal leading-7 text-gray-500">
+            <div className="flex flex-col gap-y-5 pl-4 text-base font-normal leading-5 text-gray-500 md:text-lg md:leading-7">
               <div className="flex items-center gap-x-3">
                 <div className="max-w-max rounded-full bg-primary-100 p-2">
                   <svg width="14" height="14" viewBox="0 0 15 13" fill="none">
@@ -55,20 +55,20 @@ export const Cta = () => {
                 <p>Leverage automation to move fast</p>
               </div>
             </div>
-            <div className="mt-10 flex gap-x-3">
+            <div className="mt-10 flex flex-col-reverse gap-3 md:flex-row">
               <div>
-                <Button variant="outline" size="md">
+                <Button variant="outline" size="md" responsivewfull={true}>
                   <p className="font-semibold leading-6">Learn more</p>
                 </Button>
               </div>
               <div>
-                <Button variant="solid" size="md">
+                <Button variant="solid" size="md" responsivewfull={true}>
                   <p className="font-semibold leading-6">Get started</p>
                 </Button>
               </div>
             </div>
           </div>
-          <div className="basis-1/2">
+          <div className="mt-16 w-full basis-1/2 md:mt-0 md:w-auto">
             <Image src={FeaturesOne} alt="" className="h-full w-full" />
           </div>
         </div>

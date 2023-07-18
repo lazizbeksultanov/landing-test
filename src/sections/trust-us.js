@@ -9,21 +9,24 @@ export const TrustUs = () => {
         <p className="text-center text-base font-medium leading-6 text-gray-500">
           Join 4,000+ companies already growing
         </p>
-        <div className="mt-8 flex w-full items-center justify-between">
+        <div className="mt-8 grid w-full grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-6">
           <Link href="/">
-            <Image src={CompanyLogo} alt="Company Logo" />
+            <Image src={CompanyLogo} alt="Company Logo" className="mx-auto" />
           </Link>
           <Link href="/">
-            <Image src={CompanyLogo} alt="Company Logo" />
+            <Image src={CompanyLogo} alt="Company Logo" className="mx-auto" />
           </Link>
           <Link href="/">
-            <Image src={CompanyLogo} alt="Company Logo" />
+            <Image src={CompanyLogo} alt="Company Logo" className="mx-auto" />
           </Link>
           <Link href="/">
-            <Image src={CompanyLogo} alt="Company Logo" />
+            <Image src={CompanyLogo} alt="Company Logo" className="mx-auto" />
           </Link>
           <Link href="/">
-            <Image src={CompanyLogo} alt="Company Logo" />
+            <Image src={CompanyLogo} alt="Company Logo" className="mx-auto" />
+          </Link>
+          <Link href="/">
+            <Image src={CompanyLogo} alt="Company Logo" className="mx-auto" />
           </Link>
         </div>
       </div>
