@@ -1,4 +1,3 @@
-import { BoltIcon, EnvelopeIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import FeaturesOne from '../../public/assets/images/featuresone.png'
 import { Button } from '@/components/Button'

@@ -5,7 +5,6 @@ import Logo from '../../public/assets/images/Logo.svg'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/Button'
-import { PlayCircleIcon } from '@heroicons/react/24/outline'
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
