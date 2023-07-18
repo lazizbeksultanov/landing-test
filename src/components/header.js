@@ -1,33 +1,42 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Logo from '../../public/assets/images/Logo.svg'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/Button'
-import { PlayCircleIcon } from '@heroicons/react/24/outline'
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
   const genericHamburgerLine = `h-0.5 w-[18px] my-0.5 rounded-full bg-gray-500 transition ease transform duration-300`
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add('overflow-hidden')
+    }
+
+    return () => {
+      document.body.classList.remove('overflow-hidden')
+    }
+  }, [isOpen])
+
   return (
-    <div className="relative w-full border-b border-red-500">
-      <div className="absolute z-10 w-full border-b-2 border-gray-50 bg-white md:border-white">
+    <div className="relative w-full">
+      <div className="fixed z-10 w-full border-b-2 border-gray-50 bg-white md:border-white">
         <div className="container flex items-center justify-between py-4 md:py-5">
           <nav className="flex items-center">
             <Link href="/" className="mr-10 flex items-center">
               <Image src={Logo} alt="" className="mr-3" />
               <p className="text-2xl font-semibold leading-7">Muxlisa</p>
             </Link>
-            <div className="hidden gap-x-6 text-base font-semibold leading-6 text-gray-500 lg:flex">
+            <div className="hidden gap-x-6 text-base font-semibold leading-6 text-gray-500 md:flex">
               <Link href="">Bosh sahifa</Link>
               <Link href="">Servislar</Link>
               <Link href="">Resurslar</Link>
               <Link href="">Narxlar</Link>
             </div>
           </nav>
-          <div className="hidden lg:inline-block">
+          <div className="hidden md:inline-block">
             <Link href="/">
               <Button variant="empty">
                 <p className="font-semibold leading-6">Log in</p>
@@ -39,7 +48,7 @@ export const Header = () => {
               </Button>
             </Link>
           </div>
-          <div className="inline-block lg:hidden">
+          <div className="inline-block md:hidden">
             <button
               className="group flex h-12 w-7 flex-col items-end justify-center rounded"
               onClick={() => setIsOpen(!isOpen)}
@@ -52,7 +61,7 @@ export const Header = () => {
         </div>
       </div>
       <div
-        className={`absolute z-0 min-h-[calc(100vh-80px)] w-full bg-white transition-all duration-500 md:h-[calc(100vh-88px)] ${
+        className={`fixed z-0 h-[calc(100vh-80px)] w-full overflow-y-scroll bg-white transition-all duration-500 md:h-[calc(100vh-88px)] ${
           isOpen ? 'translate-y-[80px] md:translate-y-[88px]' : '-translate-y-full md:-translate-y-full'
         }`}
       >

@@ -11,13 +11,13 @@ export default function Home() {
   return (
     <main>
       <Main />
-      {/*<TrustUs />*/}
-      {/*<Features />*/}
-      {/*<Integrations />*/}
-      {/*<Statistics />*/}
+      <TrustUs />
+      <Features />
+      <Integrations />
+      <Statistics />
       {/*<Pricing />*/}
-      {/*<Freetrial />*/}
-      {/*<Cta />*/}
+      <Freetrial />
+      <Cta />
     </main>
   )
 }

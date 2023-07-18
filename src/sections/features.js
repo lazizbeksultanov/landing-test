@@ -6,32 +6,36 @@ export const Features = () => {
   return (
     <div className="w-full bg-white py-24">
       <div className="container">
-        <div className="mx-auto w-7/12">
-          <p className="text-center text-base font-semibold leading-6 text-primary-700">Imkoniyatlarimiz</p>
-          <p className="mt-3 text-center text-4xl font-semibold leading-[2.75rem] tracking-tight text-gray-900">
+        <div className="mx-auto w-11/12 md:w-7/12">
+          <p className="text-center text-sm font-semibold leading-5 text-primary-700 md:text-base md:leading-6">
+            Imkoniyatlarimiz
+          </p>
+          <p className="mt-3 text-center text-3xl font-semibold leading-[2.375rem] tracking-tight text-gray-900 md:text-4xl md:leading-[2.75rem]">
             Analytics that feels like it’s from the future
           </p>
-          <p className="mt-5 text-center text-xl font-normal leading-[1.875rem] text-gray-500">
+          <p className="mt-5 text-center text-lg font-normal leading-7 text-gray-500 md:text-xl md:leading-[1.875rem]">
             Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users.
             Trusted by over 4,000 startups.
           </p>
         </div>
         <div className="flex flex-col gap-y-24 pt-24">
-          <div className="flex items-center justify-between gap-x-24">
-            <div className="basis-1/2">
+          <div className="flex flex-col items-center justify-between gap-x-24 md:flex-row">
+            <div className="w-full basis-1/2 md:w-auto">
               <div className="mb-6 max-w-max rounded-full bg-primary-50 p-2">
                 <div className="max-w-max rounded-full bg-primary-100 p-2">
                   <EnvelopeIcon className="w-5 text-primary-600" />
                 </div>
               </div>
               <div className="mb-8">
-                <p className="mb-4 text-3xl font-semibold leading-[2.375rem] text-gray-900">Share team inboxes</p>
-                <p className="text-lg font-normal leading-7 text-gray-500">
+                <p className="mb-4 text-2xl font-semibold leading-8 text-gray-900 md:text-3xl md:leading-[2.375rem]">
+                  Share team inboxes
+                </p>
+                <p className="text-base font-normal leading-6 text-gray-500 md:text-lg md:leading-7">
                   Whether you have a team of 2 or 200, our shared team inboxes <br /> keep everyone on the same page and
                   in the loop.
                 </p>
               </div>
-              <div className="flex flex-col gap-y-5 pl-4 text-lg font-normal leading-7 text-gray-500">
+              <div className="flex flex-col gap-y-5 pl-4 text-base font-normal leading-6 text-gray-500 md:text-lg md:leading-7">
                 <div className="flex items-center gap-x-3">
                   <div className="max-w-max rounded-full bg-primary-100 p-2">
                     <svg width="14" height="14" viewBox="0 0 15 13" fill="none">
@@ -73,25 +77,27 @@ export const Features = () => {
                 </div>
               </div>
             </div>
-            <div className="basis-1/2">
+            <div className="mt-10 w-full basis-1/2 md:mt-0 md:w-auto">
               <Image src={FeaturesOne} alt="" className="h-full w-full" />
             </div>
           </div>
-          <div className="flex flex-row-reverse items-center justify-between gap-x-24">
-            <div className="basis-1/2">
+          <div className="flex flex-col items-center justify-between gap-x-24 md:flex-row-reverse">
+            <div className="w-full basis-1/2 md:w-auto">
               <div className="mb-6 max-w-max rounded-full bg-primary-50 p-2">
                 <div className="max-w-max rounded-full bg-primary-100 p-2">
                   <BoltIcon className="w-5 text-primary-600" />
                 </div>
               </div>
               <div className="mb-8">
-                <p className="mb-4 text-3xl font-semibold leading-[2.375rem] text-gray-900">Deliver instant answers</p>
-                <p className="text-lg font-normal leading-7 text-gray-500">
+                <p className="mb-4 text-2xl font-semibold leading-8 text-gray-900 md:text-3xl md:leading-[2.375rem]">
+                  Deliver instant answers
+                </p>
+                <p className="text-base font-normal leading-6 text-gray-500 md:text-lg md:leading-7">
                   An all-in-one customer service platform that helps you balance <br /> everything your customers need
                   to be happy.
                 </p>
               </div>
-              <div className="flex flex-col gap-y-5 pl-4 text-lg font-normal leading-7 text-gray-500">
+              <div className="flex flex-col gap-y-5 pl-4 text-base font-normal leading-6 text-gray-500 md:text-lg md:leading-7">
                 <div className="flex items-center gap-x-3">
                   <div className="max-w-max rounded-full bg-primary-100 p-2">
                     <svg width="14" height="14" viewBox="0 0 15 13" fill="none">
@@ -133,12 +139,12 @@ export const Features = () => {
                 </div>
               </div>
             </div>
-            <div className="basis-1/2">
+            <div className="mt-10 w-full basis-1/2 md:mt-0 md:w-auto">
               <Image src={FeaturesOne} alt="" className="h-full w-full" />
             </div>
           </div>
-          <div className="flex items-center justify-between gap-x-24">
-            <div className="basis-1/2">
+          <div className="flex flex-col items-center justify-between gap-x-24 md:flex-row">
+            <div className="w-full basis-1/2 md:w-auto">
               <div className="mb-6 max-w-max rounded-full bg-primary-50 p-2">
                 <div className="max-w-max rounded-full bg-primary-100 p-2">
                   <svg width="14" height="14" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -153,15 +159,15 @@ export const Features = () => {
                 </div>
               </div>
               <div className="mb-8">
-                <p className="mb-4 text-3xl font-semibold leading-[2.375rem] text-gray-900">
+                <p className="mb-4 text-2xl font-semibold leading-8 text-gray-900 md:text-3xl md:leading-[2.375rem]">
                   Manage your team with reports
                 </p>
-                <p className="text-lg font-normal leading-7 text-gray-500">
+                <p className="text-base font-normal leading-6 text-gray-500 md:text-lg md:leading-7">
                   Measure what matters with Untitled’s easy-to-use reports. You <br /> can filter, export, and drilldown
                   on the data in a couple clicks.
                 </p>
               </div>
-              <div className="flex flex-col gap-y-5 pl-4 text-lg font-normal leading-7 text-gray-500">
+              <div className="flex flex-col gap-y-5 pl-4 text-base font-normal leading-6 text-gray-500 md:text-lg md:leading-7">
                 <div className="flex items-center gap-x-3">
                   <div className="max-w-max rounded-full bg-primary-100 p-2">
                     <svg width="14" height="14" viewBox="0 0 15 13" fill="none">
@@ -203,7 +209,7 @@ export const Features = () => {
                 </div>
               </div>
             </div>
-            <div className="basis-1/2">
+            <div className="mt-10 w-full basis-1/2 md:mt-0 md:w-auto">
               <Image src={FeaturesOne} alt="" className="h-full w-full" />
             </div>
           </div>

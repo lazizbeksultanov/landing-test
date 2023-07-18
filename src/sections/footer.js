@@ -16,7 +16,7 @@ export const Footer = () => {
               <p className="mt-8 text-base font-normal leading-6 text-primary-200">
                 Design amazing digital experiences that <br /> create more happy in the world.
               </p>
-              <div className="mt-8 flex items-center space-x-8 text-base font-semibold leading-6 text-primary-200">
+              <div className="mt-8 hidden flex-col items-center space-x-8 text-base font-semibold leading-6 text-primary-200 md:flex md:flex-row">
                 <Link href="/">Overview</Link>
                 <Link href="/">Features</Link>
                 <Link href="/">Pricing</Link>
